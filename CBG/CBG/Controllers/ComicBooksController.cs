@@ -18,21 +18,8 @@ namespace CBG.Controllers
             //actionresult almost always used for return type of action methods
         public ActionResult Detail()
         {
+            return View();
 
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Friday)
-            {
-                
-                    return Redirect("/"); //Return string for target URL
-
-            }
-
-            return Content("Hello");
-
-        }
-
-        public string Index()
-        {
-            return "index";
         }
 
     }
